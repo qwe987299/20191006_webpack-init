@@ -1,7 +1,4 @@
-import './styles/index.scss';
-
-console.log('hello world');
-
-import './app/index';
-
-import './app/react.jsx';
+import './styles/index.scss'
+import './app/index'
+import './app/react.jsx'
+console.log('hello world')

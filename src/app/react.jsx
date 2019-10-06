@@ -1,8 +1,19 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React, { useState } from 'react'
+import ReactDOM from 'react-dom'
 
-const Index = () => {
-    return <div className="helloworld">Hello React,Webpack4,Babel7!</div>;
-};
+var App = () => {
+  const [count, setCount] = useState(0)
 
-ReactDOM.render(<Index />, document.querySelector("#root"));
+  return (
+    <div className="App">
+      <h1>Hello CodeSandbox</h1>
+      <h2>You clicked {count} times!</h2>
+
+      <button onClick={() => setCount(count - 1)}>Decrement</button>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+    </div>
+  )
+}
+
+const rootElement = document.getElementById('root')
+ReactDOM.render(<App />, rootElement)

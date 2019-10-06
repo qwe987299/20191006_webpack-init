@@ -5,6 +5,8 @@ import 'slider-pro/dist/css/slider-pro.min.css';
 import 'magnific-popup';
 import 'magnific-popup/dist/magnific-popup.css';
 
+import Swal from 'sweetalert2'
+
 (function () {
     'use strict';
 
@@ -39,6 +41,13 @@ import 'magnific-popup/dist/magnific-popup.css';
             }
         }
     });
+
+    Swal.fire({
+        title: 'Error!',
+        text: 'Do you want to continue',
+        type: 'error',
+        confirmButtonText: 'Cool'
+      })
 
 })(); // Page Ready
 
